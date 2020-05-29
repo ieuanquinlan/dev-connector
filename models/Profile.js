@@ -8,6 +8,9 @@ const ProfileSchema = new mongoose.Schema({
   company: {
     type: String,
   },
+  website: {
+    type: String
+  },
   location: {
     type: String,
   },
@@ -47,11 +50,9 @@ const ProfileSchema = new mongoose.Schema({
       },
       to: {
         type: Date,
-        required: true,
       },
       current: {
-        type: Boolean,
-        required: true,
+        type: Boolean
       },
       description: {
         type: String,
@@ -77,11 +78,9 @@ const ProfileSchema = new mongoose.Schema({
       },
       to: {
         type: Date,
-        required: true,
       },
       current: {
         type: Boolean,
-        required: true,
       },
       description: {
         type: String,
@@ -105,6 +104,10 @@ const ProfileSchema = new mongoose.Schema({
       type: String,
     },
   },
+  date: {
+    type: Date,
+    default: Date.now
+  }
 })
 
 module.exports = Profile = mongoose.model('profile', ProfileSchema)
