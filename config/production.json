@@ -1,0 +1,7 @@
+{
+    "mongoURI": "mongodb+srv://iq:pkqWlcQxwZMVFQmV@cluster0-5gulj.mongodb.net/DevConnector",
+    "jwtSecret": "potamus",
+    "githubClientId": "d6caddd2698a05d3bd59",
+    "githubSecret": "04993dd6a608edcc7bfac4dab42bd886df174835"
+}
+
